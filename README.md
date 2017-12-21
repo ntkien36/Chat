@@ -22,3 +22,11 @@ A java based chatting application.
 - [ ] Spell Check.
 - [ ] Support for emoticons.
 - [ ] Local Cache for storing data.
+
+#### Screenshots of the application : 
+<img src="https://github.com/garvit14/Chit-Chat/blob/master/screenshots/login.png">
+<img src="https://github.com/garvit14/Chit-Chat/blob/master/screenshots/signup.png">
+<img src="https://github.com/garvit14/Chit-Chat/blob/master/mainscreen.png">
+<img src="https://github.com/garvit14/Chit-Chat/blob/master/screenshots/create_group.png">
+<img src="https://github.com/garvit14/Chit-Chat/blob/master/screenshots/profile.png">
+<img src="https://github.com/garvit14/Chit-Chat/blob/master/screenshots/request.png">
