@@ -14,7 +14,7 @@ public class DatabaseProxy {
     private Connection conn;
     public DatabaseProxy(){
         try {
-            conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/ChitChat","root","timepass123");
+            conn=DriverManager.getConnection("jdbc:mysql://localhost:3306/ChitChat","root","password");
             System.out.println("Connection to the database has been established!!");
         } catch (SQLException e) {
             e.printStackTrace();
