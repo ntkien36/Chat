@@ -1,5 +1,5 @@
 # Chit-Chat
-A java based chatting application.
+A java based chatting application with GUI in JavaFX.
 
 ## Requirements :
 - JDK 8 or above
