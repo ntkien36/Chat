@@ -11,6 +11,7 @@ public class Packet implements Serializable{
     public String string3;//file extension
     public String string4;
     public String string5;
+    public String string6;
     public int type;
     public boolean response;//response of some checking
     public List<People> peopleList;//contains all the users

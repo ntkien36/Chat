@@ -15,7 +15,7 @@ public class PreparedDatabaseProxy {
     private Connection conn;
     public PreparedDatabaseProxy(){
         try {
-            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/ChitChat","root","password");
+            conn= DriverManager.getConnection("jdbc:mysql://localhost:3306/TaoChat","root","03062002");
             System.out.println("Connection to the database has been established!!");
         } catch (SQLException e) {
             e.printStackTrace();

@@ -40,6 +40,7 @@ public class ClientSender {
         if(file!=null) {
             String path=file.getAbsolutePath();
             sendingPacket.string3=path.substring(path.lastIndexOf('.')+1);//extension of file in string 3
+            sendingPacket.string6=path.substring(path.lastIndexOf('\\')+1, path.lastIndexOf('.'));
             sendingPacket.buff = Files.readAllBytes(Paths.get(file.getAbsolutePath()));
         }
         oos.writeObject(Cryptography.encrypt(sendingPacket));
@@ -53,6 +54,7 @@ public class ClientSender {
         if(file!=null) {
             String path=file.getAbsolutePath();
             sendingPacket.string3=path.substring(path.lastIndexOf('.')+1);//extension of file in string 3
+            sendingPacket.string6=path.substring(path.lastIndexOf('\\')+1, path.lastIndexOf('.'));//extension of file in string 3
             sendingPacket.buff = Files.readAllBytes(Paths.get(file.getAbsolutePath()));
         }
         oos.writeObject(Cryptography.encrypt(sendingPacket));

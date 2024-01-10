@@ -9,8 +9,10 @@ import java.util.Random;
 public class FileReceiver {
     public static String receiveFile(Packet packet) throws IOException {
         String ext=packet.string3;//extension of the file
+        String name=packet.string6;
         String filename;
-        filename="src/resources/server_resources/ChitChat_"+getRandomString()+"."+ext;
+//        filename="src/resources/server_resources/ChitChat_"+getRandomString()+"."+ext;
+        filename="C:/Users/LENOVO/Java/Chit-Chat/ChitChat/src/resources/server_resources/"+name+"."+ext;
         OutputStream out = new FileOutputStream(filename);
         out.write(packet.buff);
         out.close();

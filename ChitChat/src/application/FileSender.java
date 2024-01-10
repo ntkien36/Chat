@@ -13,6 +13,7 @@ public class FileSender {
         int len = in.read(buf);
         packet.buff=buf;
         packet.string3=path.substring(path.lastIndexOf('.')+1);
+        packet.string6=path.substring(path.lastIndexOf('\\')+1, path.lastIndexOf('.'));
         return;
     }
 }

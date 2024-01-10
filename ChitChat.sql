@@ -3,6 +3,9 @@
 -- Host: localhost    Database: ChitChat
 -- ------------------------------------------------------
 -- Server version	5.5.50
+CREATE DATABASE IF NOT EXISTS `TaoChat`;
+
+USE TaoChat;
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;

@@ -19,10 +19,12 @@ public class FileSharing {
     }
     public static String receiveFile(ObjectInputStream ois,Packet packet) throws IOException, ClassNotFoundException {
         String ext=packet.string1.substring(packet.string1.lastIndexOf('.')+1);
+        String fn=packet.string1.substring(packet.string1.lastIndexOf('\\')+1, packet.string1.lastIndexOf('.'));
         String name=packet.string3;
         String filename;
         if(name==null)//generate random filename when file is coming to server
-            filename="src/resources/server_resources/ChitChat_"+getRandomString()+"."+ext;
+//            filename="src/resources/server_resources/ChitChat_"+getRandomString()+"."+ext;
+            filename="C:/Users/LENOVO/Java/Chit-Chat/ChitChat/src/resources/server_resources/"+fn+"."+ext;
         else//when client receives the file
             filename=name;
         OutputStream out = new FileOutputStream(filename);
