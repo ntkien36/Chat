@@ -65,7 +65,7 @@ public class ClientReceivingThread implements Runnable{
                 mainController.myInitializations();
                 Platform.runLater(() -> {
                     Stage stage = new Stage();
-                    stage.setTitle("Let's Chit-Chat " + Main.getUser().getUserName());
+                    stage.setTitle("Let's Chat " + Main.getUser().getUserName());
                     stage.setScene(new Scene(root, 1000, 550));
                     stage.setOnCloseRequest(event -> {
 
